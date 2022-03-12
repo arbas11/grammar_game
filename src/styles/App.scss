@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  background-image: url("../images/monas.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .highscore-board {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    .high-salah-benar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+  .selamat-datang-container {
+    .start-button {
+      border-radius: 20px;
+      width: 100px;
+      padding: 10px;
+    }
+  }
+}
+.timer {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: white;
+  color: maroon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-board {
+  background-color: white;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.button-question-container {
+  display: flex;
+  flex-direction: column;
+}
+.button-question {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  color: #069;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.benar-salah-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .benar-score {
+    color: greenyellow;
+  }
+  .salah-score {
+    color: red;
+  }
+}
+.benar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .anda-benar {
+    background-image: url("../images/correct.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
+    height: 35px;
+    width: 35px;
+  }
+}
+.salah-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .kurang-tepat {
+    background-image: url("../images/wrong.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
+    height: 25px;
+    width: 25px;
+  }
+}
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  .modal-content {
+    border-radius: 30px;
+    height: 50%;
+    .modal-body {
+      .benar-salah-container {
+        height: 100%;
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center;
+        .scoring-board {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .benar-score {
+            font-size: 3em;
+            color: greenyellow;
+          }
+          .salah-score {
+            font-size: 3em;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
